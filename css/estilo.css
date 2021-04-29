@@ -1,6 +1,17 @@
 html, body{
-	margin:0px !important;
+	margin: 0px !important;
 	padding: 0px !important;
+}
+
+/* @font-face {
+	font-family: GAMEFONT; 
+	src: url('Arquivos/gamefont.otf');
+	font-weight: normal;
+	font-style: normal;
+} */
+@font-face {
+	font-family: GAMEFONT;
+	src: url(../Arquivos/gamefont.ttf) /*Para os demais navegadores*/;
 }
 
 html{
@@ -10,12 +21,6 @@ html{
 	margin: 0;
 	padding: 0;
 }
-/*body, .lastnews ul li, .lastnews ol li{
-	
-	/*Gill Sans MT, 'Goudy Bookletter 1911', serif, 'Roboto', sans-serif;/
-	color: black;
-	text-shadow: none;
-} */
 
 /* Tirar sublinhado dos links */
 a:link, a:active, a:visited{
@@ -46,63 +51,23 @@ ul.inline li, ol.inline li{
 ul.inline li:last-child, ol.inline li:last-child{
 	margin-right: 0;
 }	
-label, input[type=submit], input[type=text]{
-	display: block;
-}
 
-label, input[type=submit]{
-	padding: 10px
-}
-input.login{
-	padding: 5px 5px;
-	border-radius: 5px;
-	color: black;
-	cursor: pointer;
-	/*margin-bottom: 5px;*/
-	display: inline;
-	float: left;
-}
-input[type=text]{
-	font-family: 0;
-}
-input[type=search]{
-	width: 150px;
-}
-textarea{
-	resize: none;
-}
-a.botao, input.botao, button.botao{
-	background: rgb(210,210,220);
-	padding: 5px 10px;
-	border-radius: 3px;
-	color: rgb(0,100,0);
-	cursor: pointer;
-	margin: 5px 0;
-	display: inline-block;
-	border: 1px;
-	text-decoration: none;
-}
-
-a.botao:hover, input.botao:hover, button.botao:hover{
-	background: rgb(60,179,113);
-	color: white;
-	text-decoration: none;
-}
 img{
 	max-width: 100%;
 	height: auto;
 }
-/* Definições do header e do menu */
+/* Definições do menu */
 .menusec, .footersec{
 	width: 100%;
+	text-align: center;
 	border-top: 0.5px solid black;
 	border-bottom: 0.5px solid black;
-	background: rgb(80, 78, 78);
 	overflow: none;
 }
 .menu, .footer{
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 12px;
+/* 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+	font-family: GAMEFONT;
+	font-size: 22px;
 	color: black;
 	/*text-shadow: 1px 1px gray;*/
 	text-transform: uppercase;
@@ -121,8 +86,9 @@ img{
 }
 .menu ul li:hover{
 	text-decoration: none;
-	background: gray;
+	background: rgb(167, 11, 11);
 	color: white;
+	transition: 1s;
 }
 .menu ul{
 	padding: 0;
@@ -135,30 +101,24 @@ img{
 }
 .menu li a:hover{
 	text-decoration: none;
-	color: black; 
-	text-shadow: 0.5px 2px white;
+	color: white; 
 }
-.menu ul ul{
-	width: 140px;
-	border-radius: 3px;
-	display: block;
-}
-.menu ul ul{
-	display: none;
+.butapoie{
+	background:rgb(167, 11, 11);
 	position: absolute;
-	background-color: rgb(240,249,240);
-	box-shadow: 3px 3px 3px 3px gradient green;
-}
-.menu ul li:hover > ul, .menu ul li ul:hover{
-	display: block;
+	float: right;
+	margin-left: 14.5rem;
+	padding: 0px 8px;
 }
 /* CORPO PRINCIPAL DO SITE*/
 .principal{
-	width: 100%;
+/* 	background-image: url(/img/banner.png);
+ */	width: 100%;
 	position: relative;
 }
 .principal img{
 	width: 100%;
+	position: relative;
 
 }
 .principal h2, .principal h3, .principal h4{
@@ -174,7 +134,7 @@ img{
 	right: 10px;
 }
 .principal h2 img{
-	width: 40%;
+	width: 35%;
 }
 .principal h3{
 	font-size: 23px;
@@ -190,4 +150,12 @@ img{
 	margin-right: 8px;
 	margin-left: 20px;
 	float: center;
+}
+
+@media screen and (min-widht: 660px) {
+
+	.butapoie{
+		position: relative;
+	}
+	
 }
