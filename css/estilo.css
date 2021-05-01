@@ -9,24 +9,16 @@ html, body{
 	font-weight: normal;
 	font-style: normal;
 } */
+
+/* FONTE DA PÁGINA */
 @font-face {
 	font-family: GAMEFONT;
-	src: url(../Arquivos/gamefont.ttf) /*Para os demais navegadores*/;
+	src: url(../Arquivos/gamefont.ttf);
 }
-
 html{
 	width: 100%;
 	background-color: rgb(20, 19, 19);
 }
-
-header{
-	display: none;
-}
-
-/* footer{
-	display: none;
-} */
-
 /* Tirar sublinhado dos links */
 a:link, a:active, a:visited{
 	color: white;
@@ -35,147 +27,89 @@ a:link, a:active, a:visited{
 a:hover{
 	color: gray;
 	text-decoration: underline;
-}
-/* Estilos reutilizáveis */
-.sem-padding{
-	padding: 0px;
-}
-.sem-margin{
-	margin: 0px;
-}
-ul li, ol li{
-	margin-bottom: 0px;
-}
-ul.inline li, ol.inline li{
-	display: inline;
-}
-ul.inline li:last-child, ol.inline li:last-child{
-	margin-right: 0;
 }	
-
-/* Definições do menu */
-.menusec{
-	width: 100%;
-	text-align: center;
-	/* border-top: 0.5px solid black;
-	border-bottom: 0.5px solid black; */
-	overflow: none;
-}
-.menu{
-/* 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-	font-family: GAMEFONT;
-	font-size: 22px;
-	/*text-shadow: 1px 1px gray;*/
-	text-transform: uppercase;
-	/* overflow: none; */
-	text-align: center;
-	display: inline-flex;
-	align-items: center;
-	/*position: relative;*/
-}
-.menu li{
-	/* width: 140px;
-	height: 35px; */
-	display: inline-block;
-	text-align: center;
-	line-height: 35px;
-}
-.menu li a{
-	text-decoration: none;
-	/*padding: 5px 2.5px 0px 10px;*/
-	border-radius: 	3px; 
-}
-.menu li a:hover{
-	text-decoration: none;
-	color: white; 
-}
 
 /* CORPO PRINCIPAL DO SITE*/
 .principal{
+	/* IMAGEM D BACKGROUND (BANNER) */
 	background: url(../img/banner.png) no-repeat;
+	/* AJUSTE DE TAMANHO DO BACKGROUND (ELE PASSAVA DO TAMANHO TODO DA TELA COM 100% */
 	background-size: 99.9%;
 	width: 100%;
 	position: relative;
 	margin: 0px;
 	padding: 0px;
 	font-family: GAMEFONT;
+	/* DEIXA OS TEXTOS TODOS EM MAIÚSCULO */
 	text-transform: uppercase;
+	/* POSICIONA OS ITENS UM ABAIXO DO OUTRO */
 	display: block;
+	/* ALINHA O MENU AO CENTRO */
 	text-align: center;
 	align-items: center;
 }
+/* Definições do menu */
+.menu{
+	/* ALINHA AS OPÇÕES DO MENU */
+	display: inline-flex;
+}
+/* Confugurações do menu 
+(excluindo o botão de apoie) */
 .principal a.menu{
 	font-size: 30px;
+	/* TAMANHO DA CAIXA DE BACKGROUND DE CADA OPÇÃO */
 	padding: 8px 20px;
+	/* ESPAÇAMENTO ENTRE AS OPÇÕES */
 	margin-right: 30px;
 }
 .principal a.menu:hover{
 	text-decoration: none;
+	/* COR DA CAIXA DAS OPÇÕES */
 	background: rgb(167, 11, 11);
 	color: white;
+	/* TRANSIÇÃO DA CAIXA */
 	transition: 1s;
 }
+/* Icons */
 .principal a img{
+	/* TAMANHO DAS IMAGENS DOS ICONS */
 	width: 2.5%;
 	float: left;
 	padding: 0 10px 10px;
 	margin-right: 15px;
 }
+/* Letreiro */
 .principal img{
+	/* TAMANHO DA IMAGEM DO LETREIRO */
 	width: 30%;
+	/* PREENCHIMENTO PARA QUE A IMAGEM DE BACKGROUND APAREÇA */
 	padding: 16%;
 }
-.principal h2, .principal h3, .principal h4{
-	/* position: relative; */
-	color: white;
-	padding: 10%;
-	text-shadow: 0.5px 2px black;
-}
-.principal h2{
-	font-size: 50px;
-	top: 150px;
-	left: 30px;
-	right: 10px;
-}
-.principal h2 img{
-	width: 45%;
-}
-.principal h3{
-	font-size: 23px;
-	top: 200px;
-	left: 30px;
-	right: 10px;	
-}
+/* Texto dos direitos reservados */
 .principal span{
 	color: white;
 }
+/* Butão apoie */
 .butapoie{
+	/* COR DA CAIXA DO BOTÃO */
 	background:rgb(167, 11, 11);
+	font-size: 25px;
+	/* DEFINIÇÕES DA POSIÇÃO DO BOTÃO */
 	position: absolute;
 	float: right;
-	font-size: 25px;
 	margin-right: 0px;
 	margin-left: 208px;
 	padding: 8px 15px;
 }
-.butapoie:hover {
+.butapoie:hover{
 	text-decoration: none;
+	/* COR DE MUDANÇA DA CAIXA BOTÃO */
 	background-color: white;
+	/* COR DE MUDANÇA DO TEXTO */
 	color: black;
+	/* TEMPO DA MUDANÇA */
 	transition: 1s;
 }
-.icons{
-	width: 100%;
-	display: inline-flex;
-	align-items: center;
-	background-color: rgb(224, 49, 49);
-}
-.icons a img{
-	width: 2.5%;
-	float: left;
-	margin: 10px;
-}
-
 /*RODAPÉ*/
 
 /* TELAS MENORES */
