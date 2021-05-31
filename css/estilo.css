@@ -111,7 +111,22 @@ a:hover{
 	transition: 1s;
 }
 /*RODAPÉ*/
-
+.rodape{
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.rodape span{
+	color: white;
+	font-family: GAMEFONT;
+	font-size: 30px;
+	text-align: center;
+}
+.rodape img{
+	margin-left: 30px;
+	width: 50%;	
+}
 /* TELAS MENORES */
 @media screen and (min-widht: 660px) {
 
